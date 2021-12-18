@@ -4,12 +4,13 @@ function Consultorio(_nombreConsul) {
   this.nuevoPaciente = (_nombre, _edad, _rut, _diagnostico) => {
     this.pacientes.push(new Paciente(_nombre, _edad, _rut, _diagnostico));
   };
-  this.showPacientes = function () {
+  this.getPacientes = function () {
     for (paciente of this.pacientes) {
       paciente.show();
     }
   };
-  this.filtroPacienteNombre = function (_nombre) {
+
+  this.getPacienteNombre = function (_nombre) {
     this.pacientes
       .filter((paciente) => paciente.nombre == _nombre)
       .map((paciente) => paciente.show());
@@ -42,6 +43,5 @@ temucoCentro.nuevoPaciente('Julio', 32, '14.874.XXX-X', 'Alergia leve');
 
 console.log(temucoCentro);
 
-temucoCentro.filtroPacienteNombre('Julio');
+temucoCentro.getPacienteNombre('Julio');
 temucoCentro.borrarPaciente('Alfredo');
-console.log(temucoCentro);

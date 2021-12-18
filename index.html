@@ -15,12 +15,67 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid p-5">
+        <form class="row nuevo-consul mb-5">
 
-        <div class="accordion" id="accordionExample">
+            <div class="col-md-6">
+                <input type="text" class="form-control nuevo-consul-name" id="nuevo-consul"
+                    placeholder="Ingrese nombre de nuevo consultorio">
+            </div>
+            <div class="col-6">
+                <button type="submit" class="btn btn-primary">Crear consultorio</button>
+            </div>
+        </form>
 
-
+        <div class="accordion consultorios-list" id="accordionExample">
         </div>
+
+        <!-- <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading__1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse__1" aria-expanded="true" aria-controls="collapse__1">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapse__1" class="accordion-collapse collapse show" aria-labelledby="heading__1"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse
+                        plugin adds the appropriate classes that we use to style each element. These classes control the
+                        overall
+                        appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                        with
+                        custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                        can go
+                        within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse
+                        plugin adds the appropriate classes that we use to style each element. These classes control the
+                        overall
+                        appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                        with
+                        custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                        can go
+                        within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div> -->
 
     </div>
 
@@ -39,7 +94,14 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
+    <!-- Option 2: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <script src="script.js"></script>
+    <!-- <script src="app.js"></script> -->
+
+
 </body>
 
 </html>
